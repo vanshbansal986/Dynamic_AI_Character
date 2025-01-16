@@ -1,0 +1,12 @@
+artifacts_root : artifacts
+
+model_info:
+  gpt_model_name: "gpt-4o-mini"
+
+tweet_gen:
+  root_dir: "artifacts/tweet_gen"
+  system_prompt_file_path: "system_prompts/system_prompt.txt"
+  output_tweets_file_path: "artifacts/tweet_gen/output_tweets.txt"
+  audio_file_path : "artifacts/tweet_gen/audio.mp3"
+  image_file_path : "artifacts/tweet_gen/image.png"
+

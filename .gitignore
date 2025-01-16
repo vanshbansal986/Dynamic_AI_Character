@@ -1,0 +1,5 @@
+venv/
+test.ipynb
+test_vid.mp4
+.env
+logs/
