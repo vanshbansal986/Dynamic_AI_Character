@@ -18,6 +18,12 @@ import requests
 from IPython.display import Audio, display
 from elevenlabs import ElevenLabs, save , play
 import elevenlabs
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+eleven_labs_api_key = os.getenv("ELEVEN_LABS_API_KEY")
 
 
 
@@ -186,7 +192,7 @@ def generate_image(image_desc:str , img_path: Path):
 def generate_audio(audio_desc:str , file_path: Path):
     # Initialize ElevenLabs client
     client = ElevenLabs(
-        api_key="sk_612688b069a195e9bd2b7db838e2f53447916d44d2ed34ff",  # Replace with your actual API key
+        api_key=eleven_labs_api_key,  # Replace with your actual API key
     )
 
     # Generate audio using text-to-speech
